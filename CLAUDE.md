@@ -1,4 +1,4 @@
-# Mika-app — Programme de musculation de Michael
+# Mika-app — Programme de musculation de Mikael
 
 ## ⚠️ Règle de travail (consigne du propriétaire)
 
@@ -11,19 +11,20 @@
 
 ## Contenu du dépôt
 
-- `index.html` — application web autonome (PWA) du programme de musculation de Michael.
+- `index.html` — application web autonome (PWA) du programme de musculation de Mikael.
   - Single-file : HTML + CSS + JS inline, icônes SVG générées, aucune dépendance.
   - Stockage local (`localStorage`) : poids saisis, historique, cases cochées.
 
 ## Le programme
 
 - **Split 4 jours** (niveau débutant/intermédiaire), basé sur le programme d'Anthony :
-  - **LUN** — Haut du corps A
-  - **MAR** — Bas du corps A
-  - **JEU** — Haut du corps B
-  - **VEN** — Bas du corps B
+  - **LUN** — Pecs · Dos · Épaules · Bras
+  - **MAR** — Quadriceps · Ischios · Mollets
+  - **JEU** — Pecs · Dos · Épaules · Bras
+  - **VEN** — Ischios · Fessiers · Hanches
+  - Les journées sont nommées par les muscles travaillés (pas de « Haut/Bas du corps A/B »).
 - **Format 4×12**, **6 exercices par jour** (hors bonus).
-- **Bonus un jour sur deux** : Abdos 4×12 (Lun/Jeu), Pompes 4×12 (Mar/Ven).
+- **Bonus un jour sur deux**, affiché comme les abdos avec le libellé « AVANT LA SÉANCE » : Abdos 4×12 (Lun/Jeu), Pompes 4×12 (Mar/Ven).
 - Exercices durs aux haltères convertis en machines guidées ; haltères gardés uniquement pour les mouvements faciles (curl, élévations latérales).
 
 ## Fonctionnalités de l'app
