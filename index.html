@@ -127,8 +127,8 @@ var P=[
     {id:'chestPressLun',name:'Machine Chest Press (Converging)',icon:'bench',cat:'assist',tip:'Assis dos contre le dossier - Pousse les poignees devant toi - Pectoraux - Machine guidee ideale pour debuter - Mouvement principal pecs'},
     {id:'inclinePressLun',name:'Incline Chest Press Machine',icon:'incline',cat:'assist',tip:'Machine de presse inclinee - Pousse vers le haut - Haut des pectoraux - Machine guidee - Descente controlee'},
     {id:'pecDeckLun',name:'Pec Deck Fly',icon:'pecFly',cat:'assist',tip:'Coudes sur les pads - Ramener les bras devant la poitrine - Isolation pecs interieur - Contraction maximale au centre - Descente controlee'},
-    {id:'tricepsPushLun',name:'Cable Triceps Pushdown',icon:'tricepsPush',cat:'assist',tip:'Corde ou barre - Coudes colles au corps - Pousse vers le bas - Triceps - Mouvement simple a la poulie'},
-    {id:'overheadTriLun',name:'Cable Overhead Triceps Extension',icon:'overhead',cat:'assist',tip:'Corde a la poulie - Bras au dessus de la tete - Descend derriere la nuque - Chef long du triceps - Coudes fixes'},
+    {id:'tricepsPushLun',name:'Cable Triceps Pushdown',icon:'tricepsPush',cat:'assist',pair:'tri',tip:'Corde ou barre - Coudes colles au corps - Pousse vers le bas - Triceps - Mouvement simple a la poulie'},
+    {id:'overheadTriLun',name:'Cable Overhead Triceps Extension',icon:'overhead',cat:'assist',pair:'tri',tip:'Corde a la poulie - Bras au dessus de la tete - Descend derriere la nuque - Chef long du triceps - Coudes fixes'},
     {id:'seatedDipLun',name:'Seated Dip Machine',icon:'seatedDip',cat:'assist',isIso:true,tip:'Machine guidee - Pousse vers le bas - Triceps + Pecs bas - ISOLATION FINALE'},
   ]},
   {id:'mar',dow:1,label:'MAR',name:'Dos · Biceps',sub:'3 Dos · 3 Biceps',color:'#3d8bff',exercises:[
@@ -137,8 +137,8 @@ var P=[
     {id:'chestRowMar',name:'Chest-Supported Row',icon:'seatedRow',cat:'assist',tip:'Poitrine contre le pad incline - Tire les poignees vers le ventre - Rhomboides + Milieu dos - Dos neutre - Pas de compensation car poitrine soutenue'},
     {id:'latPulldownMar',name:'Lat Pulldown',icon:'latPull',cat:'assist',tip:'Barre haute - Tire vers le haut de la poitrine - Grand dorsal - Coudes vers le bas - Buste legerement incline'},
     {id:'preacherMar',name:'Machine Preacher Curl',icon:'preacher',cat:'assist',isIso:true,tip:'Bras sur appui incline - Isolation biceps - Contraction maximale en haut - Descente controlee'},
-    {id:'dbCurlMar',name:'Dumbbell Curl',icon:'lateralRaise',cat:'free',tip:'Debout - Coudes colles au corps - Alterne les bras - Biceps chef court - Descente controlee - Haltere facile a gerer'},
-    {id:'hammerCurlMar',name:'Hammer Curl',icon:'lateralRaise',cat:'free',isIso:true,tip:'Prise neutre pouce vers le haut - Biceps chef long + Avant-bras - ISOLATION FINALE'},
+    {id:'dbCurlMar',name:'Dumbbell Curl',icon:'lateralRaise',cat:'free',pair:'bic',tip:'Debout - Coudes colles au corps - Alterne les bras - Biceps chef court - Descente controlee - Haltere facile a gerer'},
+    {id:'hammerCurlMar',name:'Hammer Curl',icon:'lateralRaise',cat:'free',pair:'bic',isIso:true,tip:'Prise neutre pouce vers le haut - Biceps chef long + Avant-bras - ISOLATION FINALE'},
   ]},
   {id:'mer',dow:2,label:'MER',name:'Quadriceps · Ischios · Fessiers',sub:'3 Quadri · 1 Ischio · 1 Fessier · 1 Mollet',color:'#f5a623',exercises:[
     {id:'ab_mer',name:'Abdos (Ab Machine)',icon:'abMachine',cat:'assist',isExtra:true,bannerLabel:'AVANT LA SÉANCE',tip:'Gainage abdominal - Contraction en bas - Expiration en haut'},
@@ -154,8 +154,8 @@ var P=[
     {id:'shoulderPressVen',name:'Machine Shoulder Press',icon:'shoulderPress',cat:'assist',tip:'Assis - Poussee verticale - Deltoide complet - Mouvement principal epaules - Charge moderee - Descente controlee'},
     {id:'lateralRaiseVen',name:'Dumbbell Lateral Raise',icon:'lateralRaise',cat:'free',tip:'Debout - Bras en croix jusqu a hauteur epaule - Deltoide lateral - Coudes legerement flechis - Haltere leger et mouvement controle'},
     {id:'rearDeltVen',name:'Machine Rear Delt Fly',icon:'rearDelt',cat:'assist',tip:'Pec Deck en sens inverse - Assis face au dossier - Ecarte les bras vers l arriere - Deltoide posterieur - Contraction maximale en fin de mouvement'},
-    {id:'facePullVen',name:'Cable Face Pull',icon:'facePull',cat:'assist',tip:'Corde vers le visage - Coudes hauts - Epaules posterieures + Coiffe des rotateurs - Protege les epaules'},
-    {id:'uprightRowVen',name:'Cable Upright Row',icon:'facePull',cat:'assist',tip:'Cable bas - Tire vers le menton - Coudes hauts - Deltoide lateral + Trapezes'},
+    {id:'facePullVen',name:'Cable Face Pull',icon:'facePull',cat:'assist',pair:'cable',tip:'Corde vers le visage - Coudes hauts - Epaules posterieures + Coiffe des rotateurs - Protege les epaules'},
+    {id:'uprightRowVen',name:'Cable Upright Row',icon:'facePull',cat:'assist',pair:'cable',tip:'Cable bas - Tire vers le menton - Coudes hauts - Deltoide lateral + Trapezes'},
     {id:'shrugVen',name:'Machine Shrug',icon:'shoulderPress',cat:'assist',tip:'Hausse les epaules vers les oreilles - Trapezes - Contraction maximale en haut - Descente lente'},
   ]},
 ];
