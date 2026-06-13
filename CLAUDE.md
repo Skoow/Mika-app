@@ -23,7 +23,7 @@
   - **MER** — Quadriceps · Ischios · Fessiers (seule journée jambes, complète)
   - **JEU** — Épaules · Trapèzes
   - Les journées sont nommées par les muscles travaillés (pas de « Haut/Bas du corps A/B »).
-- **Format 4×12**, **6 exercices par jour** (hors bonus).
+- **Format 4×12**, **6 exercices par jour** (hors bonus) — sauf la journée jambes (MER) qui en compte **8** pour couvrir toute la chaîne (quadri, ischios, fessiers, hanches, bas du dos, mollets).
 - **Bonus un jour sur deux**, affiché comme les abdos avec le libellé « AVANT LA SÉANCE » : Abdos 4×12 (Lun/Mer), Pompes 4×12 (Mar/Jeu).
 - Exercices durs aux haltères convertis en machines guidées ; haltères gardés uniquement pour les mouvements faciles (curl, élévations latérales).
 
