@@ -17,14 +17,14 @@
 
 ## Le programme
 
-- **Split 4 jours** (niveau débutant/intermédiaire), basé sur le programme d'Anthony :
-  - **LUN** — Pecs · Dos · Épaules · Bras
-  - **MAR** — Quadriceps · Ischios · Mollets
-  - **JEU** — Pecs · Dos · Épaules · Bras
-  - **VEN** — Ischios · Fessiers · Hanches
+- **Split 4 jours** (niveau débutant/intermédiaire) = **3 jours haut + 1 jour bas**, calé sur les jours d'Anthony (Lun→Jeu) pour s'entraîner ensemble à la salle :
+  - **LUN** — Pecs · Triceps
+  - **MAR** — Dos · Biceps
+  - **MER** — Quadriceps · Ischios · Fessiers (seule journée jambes, complète)
+  - **JEU** — Épaules · Trapèzes
   - Les journées sont nommées par les muscles travaillés (pas de « Haut/Bas du corps A/B »).
 - **Format 4×12**, **6 exercices par jour** (hors bonus).
-- **Bonus un jour sur deux**, affiché comme les abdos avec le libellé « AVANT LA SÉANCE » : Abdos 4×12 (Lun/Jeu), Pompes 4×12 (Mar/Ven).
+- **Bonus un jour sur deux**, affiché comme les abdos avec le libellé « AVANT LA SÉANCE » : Abdos 4×12 (Lun/Mer), Pompes 4×12 (Mar/Jeu).
 - Exercices durs aux haltères convertis en machines guidées ; haltères gardés uniquement pour les mouvements faciles (curl, élévations latérales).
 
 ## Fonctionnalités de l'app
