@@ -31,7 +31,8 @@
 
 - Cocher / décocher chaque exercice (progression X/6 + barre).
 - Saisie du poids en **kg** avec mémorisation et suggestion de progression (+2,5 kg après 3 séances réussies).
-- **Charge Gauche / Droite séparée** sur tous les exercices qui peuvent se faire **un côté à la fois** (machines à bras indépendants, poulies, haltères) : Mikael a un bras et une jambe diminués et ne peut pas forcer pareil des deux côtés. Chaque côté garde sa charge, son historique et sa suggestion. Badge « Bras G/D » (haut du corps) ou « Jambe G/D » (jambes). **Seul** exercice en poids unique : la traction assistée (prise bilatérale, impossible d'isoler un côté).
+- **Charge Gauche / Droite séparée** (`side:'arm'`/`'leg'`) sur les exercices réellement faisables **un côté à la fois** : haltères, poulies à une poignée, et mouvements à une jambe (leg press, leg ext, leg curl, hip thrust, mollets). Mikael a un bras et une jambe diminués et ne peut pas forcer pareil des deux côtés. Chaque côté garde sa charge, son historique et sa suggestion. Badge « Bras G/D » / « Jambe G/D ».
+- **Poids unique** sur les machines à **levier/barre unique** qui forcent les deux côtés ensemble : chest press, incline press, pec deck, seated dip, preacher, shoulder press, rear delt, shrug, hack squat, hyperextension, hip abduction, traction assistée. (14 exos en G/D, 12 en poids unique.)
 - Fuseau horaire **Europe/Paris**.
 - **Réinitialisation hebdomadaire** des cases cochées au changement de semaine ISO (nuit dimanche→lundi). Les poids enregistrés sont conservés.
 - Compteur **J–XX** (révision du programme) qui se décompte automatiquement. Programme calé sur ~2 mois (révision au 13 août 2026).
