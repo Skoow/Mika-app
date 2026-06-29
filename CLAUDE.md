@@ -31,6 +31,7 @@
 
 - Cocher / décocher chaque exercice (progression X/6 + barre).
 - Saisie du poids en **kg** avec mémorisation et suggestion de progression (+2,5 kg après 3 séances réussies).
+- **Charge Gauche / Droite séparée** sur les exercices de **bras** (biceps, triceps) et de **jambes** (toute la journée MER) : Mikael a un bras et une jambe diminués et ne peut pas forcer pareil des deux côtés. Chaque côté garde sa charge, son historique et sa suggestion. Les exercices du torse (pecs, dos, épaules, abdos) gardent un poids unique.
 - Fuseau horaire **Europe/Paris**.
 - **Réinitialisation hebdomadaire** des cases cochées au changement de semaine ISO (nuit dimanche→lundi). Les poids enregistrés sont conservés.
 - Compteur **J–XX** (révision du programme) qui se décompte automatiquement. Programme calé sur ~2 mois (révision au 13 août 2026).

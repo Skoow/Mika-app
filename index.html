@@ -74,6 +74,7 @@ select{-webkit-appearance:none;appearance:none}
 .wsel{flex:1;min-width:120px;background:#111113;border-radius:8px;font-size:13px;font-weight:600;padding:7px 10px;outline:none;border:1px solid #2a2a30;color:#555}
 .wval{font-size:12px;font-weight:700;padding:4px 8px;border-radius:8px;white-space:nowrap;border:1px solid}
 .sugg{margin:0 12px 10px 88px;background:rgba(46,204,113,.1);border:1px solid rgba(46,204,113,.3);border-radius:8px;padding:6px 10px;font-size:11.5px;color:#2ecc71}
+.wside{font-size:10px;font-weight:800;min-width:52px;letter-spacing:.3px;text-transform:uppercase}
 </style>
 </head>
 <body>
@@ -127,29 +128,29 @@ var P=[
     {id:'chestPressLun',name:'Machine Chest Press (Converging)',icon:'bench',cat:'assist',tip:'Assis dos contre le dossier - Pousse les poignees devant toi - Pectoraux - Machine guidee ideale pour debuter - Mouvement principal pecs'},
     {id:'inclinePressLun',name:'Incline Chest Press Machine',icon:'incline',cat:'assist',tip:'Machine de presse inclinee - Pousse vers le haut - Haut des pectoraux - Machine guidee - Descente controlee'},
     {id:'pecDeckLun',name:'Pec Deck Fly',icon:'pecFly',cat:'assist',tip:'Coudes sur les pads - Ramener les bras devant la poitrine - Isolation pecs interieur - Contraction maximale au centre - Descente controlee'},
-    {id:'tricepsPushLun',name:'Cable Triceps Pushdown',icon:'tricepsPush',cat:'assist',pair:'tri',tip:'Corde ou barre - Coudes colles au corps - Pousse vers le bas - Triceps - Mouvement simple a la poulie'},
-    {id:'overheadTriLun',name:'Cable Overhead Triceps Extension',icon:'overhead',cat:'assist',pair:'tri',tip:'Corde a la poulie - Bras au dessus de la tete - Descend derriere la nuque - Chef long du triceps - Coudes fixes'},
-    {id:'seatedDipLun',name:'Seated Dip Machine',icon:'seatedDip',cat:'assist',isIso:true,tip:'Machine guidee - Pousse vers le bas - Triceps + Pecs bas - ISOLATION FINALE'},
+    {id:'tricepsPushLun',name:'Cable Triceps Pushdown',icon:'tricepsPush',cat:'assist',pair:'tri',side:'arm',tip:'Corde ou barre - Coudes colles au corps - Pousse vers le bas - Triceps - Mouvement simple a la poulie'},
+    {id:'overheadTriLun',name:'Cable Overhead Triceps Extension',icon:'overhead',cat:'assist',pair:'tri',side:'arm',tip:'Corde a la poulie - Bras au dessus de la tete - Descend derriere la nuque - Chef long du triceps - Coudes fixes'},
+    {id:'seatedDipLun',name:'Seated Dip Machine',icon:'seatedDip',cat:'assist',isIso:true,side:'arm',tip:'Machine guidee - Pousse vers le bas - Triceps + Pecs bas - ISOLATION FINALE'},
   ]},
   {id:'mar',dow:1,label:'MAR',name:'Dos · Biceps',sub:'3 Dos · 3 Biceps',color:'#3d8bff',exercises:[
     {id:'pompes_mar',name:'Pompes',icon:'bench',cat:'free',isExtra:true,bannerLabel:'AVANT LA SÉANCE',tip:'Pompes au sol - Mains largeur epaules - Corps gaine et aligne - Descends la poitrine vers le sol - Remonte en poussant - Si trop dur pose les genoux au sol'},
     {id:'pullupMar',name:'Assisted Pull-Up Machine',icon:'pullup',cat:'assist',tip:'Traction assistee - Prise large - Dos large - Tire le corps vers le haut - Grand dorsal - Machine qui aide selon ton niveau'},
     {id:'chestRowMar',name:'Chest-Supported Row',icon:'seatedRow',cat:'assist',tip:'Poitrine contre le pad incline - Tire les poignees vers le ventre - Rhomboides + Milieu dos - Dos neutre - Pas de compensation car poitrine soutenue'},
     {id:'straightArmMar',name:'Cable Straight-Arm Pulldown',icon:'latPull',cat:'assist',tip:'Bras tendus - Cable en hauteur - Pousse la barre vers les hanches - Grand dorsal en isolation - Tension constante - Pas de flexion des coudes - Pattern different des tractions'},
-    {id:'preacherMar',name:'Machine Preacher Curl',icon:'preacher',cat:'assist',isIso:true,tip:'Bras sur appui incline - Isolation biceps - Contraction maximale en haut - Descente controlee'},
-    {id:'dbCurlMar',name:'Dumbbell Curl',icon:'lateralRaise',cat:'free',pair:'bic',tip:'Debout - Coudes colles au corps - Alterne les bras - Biceps chef court - Descente controlee - Haltere facile a gerer'},
-    {id:'hammerCurlMar',name:'Hammer Curl',icon:'lateralRaise',cat:'free',pair:'bic',isIso:true,tip:'Prise neutre pouce vers le haut - Biceps chef long + Avant-bras - ISOLATION FINALE'},
+    {id:'preacherMar',name:'Machine Preacher Curl',icon:'preacher',cat:'assist',isIso:true,side:'arm',tip:'Bras sur appui incline - Isolation biceps - Contraction maximale en haut - Descente controlee'},
+    {id:'dbCurlMar',name:'Dumbbell Curl',icon:'lateralRaise',cat:'free',pair:'bic',side:'arm',tip:'Debout - Coudes colles au corps - Alterne les bras - Biceps chef court - Descente controlee - Haltere facile a gerer'},
+    {id:'hammerCurlMar',name:'Hammer Curl',icon:'lateralRaise',cat:'free',pair:'bic',isIso:true,side:'arm',tip:'Prise neutre pouce vers le haut - Biceps chef long + Avant-bras - ISOLATION FINALE'},
   ]},
   {id:'mer',dow:2,label:'MER',name:'Quadriceps · Ischios · Fessiers',sub:'3 Quadri · 2 Ischios · 2 Fessiers · 1 Mollet',color:'#f5a623',exercises:[
     {id:'ab_mer',name:'Abdos (Ab Machine)',icon:'abMachine',cat:'assist',isExtra:true,bannerLabel:'AVANT LA SÉANCE',tip:'Gainage abdominal - Contraction en bas - Expiration en haut'},
-    {id:'legPressMer',name:'Leg Press Prise Serrée',icon:'legPress',cat:'semi',tip:'Pieds serres au centre de la plateforme - Quadriceps internes (vaste interne) - Genoux dans l axe des pieds - Descente complete - Mouvement principal jambes'},
-    {id:'hackSquatMer',name:'Hack Squat Machine',icon:'squat',cat:'semi',tip:'Machine guidee - Pieds ecarte largeur epaules - Descend cuisses paralleles - Quadriceps complet - Dos plat contre le coussin - Remplace le squat barre plus technique'},
-    {id:'legExtMer',name:'Leg Extension',icon:'legExt',cat:'assist',isIso:true,tip:'Assis - Jambes etendues vers le haut - Quadriceps isolation - Contraction maximale en haut - Tempo lent 4 secondes'},
-    {id:'seatedCurlMer',name:'Seated Leg Curl',icon:'legCurl',cat:'assist',tip:'Assis sur la machine - Talon sous le pad - Flechis les jambes - Ischios - Descente lente 3 secondes'},
-    {id:'hyperextMer',name:'45° Hyperextension',icon:'backExt',cat:'semi',tip:'Banc incline 45 degres - Hanches sur le pad - Descends le buste vers le bas - Remonte en contractant - Ischios + Fessiers + Bas du dos (erecteurs) - Mains croisees sur la poitrine'},
-    {id:'hipThrustMer',name:'Hip Thrust Machine',icon:'glueKick',cat:'assist',tip:'Dos contre le pad - Pousse les hanches vers le haut - Contracte les fessiers en haut - Meilleur exercice fessiers - Descente controlee'},
-    {id:'hipAbductMer',name:'Hip Abduction Machine',icon:'hipAbduct',cat:'assist',tip:'Assis - Ecarte les jambes - Fessier moyen + Hanches - Travaille une zone souvent oubliee - Contraction en haut - Descente controlee'},
-    {id:'calfMer',name:'Seated Calf Raise',icon:'calf',cat:'assist',tip:'Assis - Genoux flechis sous le pad - Monte sur la pointe des pieds - Mollets - Contraction maximale en haut - Descente complete'},
+    {id:'legPressMer',name:'Leg Press Prise Serrée',icon:'legPress',cat:'semi',side:'leg',tip:'Pieds serres au centre de la plateforme - Quadriceps internes (vaste interne) - Genoux dans l axe des pieds - Descente complete - Mouvement principal jambes'},
+    {id:'hackSquatMer',name:'Hack Squat Machine',icon:'squat',cat:'semi',side:'leg',tip:'Machine guidee - Pieds ecarte largeur epaules - Descend cuisses paralleles - Quadriceps complet - Dos plat contre le coussin - Remplace le squat barre plus technique'},
+    {id:'legExtMer',name:'Leg Extension',icon:'legExt',cat:'assist',isIso:true,side:'leg',tip:'Assis - Jambes etendues vers le haut - Quadriceps isolation - Contraction maximale en haut - Tempo lent 4 secondes'},
+    {id:'seatedCurlMer',name:'Seated Leg Curl',icon:'legCurl',cat:'assist',side:'leg',tip:'Assis sur la machine - Talon sous le pad - Flechis les jambes - Ischios - Descente lente 3 secondes'},
+    {id:'hyperextMer',name:'45° Hyperextension',icon:'backExt',cat:'semi',side:'leg',tip:'Banc incline 45 degres - Hanches sur le pad - Descends le buste vers le bas - Remonte en contractant - Ischios + Fessiers + Bas du dos (erecteurs) - Mains croisees sur la poitrine'},
+    {id:'hipThrustMer',name:'Hip Thrust Machine',icon:'glueKick',cat:'assist',side:'leg',tip:'Dos contre le pad - Pousse les hanches vers le haut - Contracte les fessiers en haut - Meilleur exercice fessiers - Descente controlee'},
+    {id:'hipAbductMer',name:'Hip Abduction Machine',icon:'hipAbduct',cat:'assist',side:'leg',tip:'Assis - Ecarte les jambes - Fessier moyen + Hanches - Travaille une zone souvent oubliee - Contraction en haut - Descente controlee'},
+    {id:'calfMer',name:'Seated Calf Raise',icon:'calf',cat:'assist',side:'leg',tip:'Assis - Genoux flechis sous le pad - Monte sur la pointe des pieds - Mollets - Contraction maximale en haut - Descente complete'},
   ]},
   {id:'jeu',dow:3,label:'JEU',name:'Épaules · Trapèzes',sub:'4 Épaules · 2 Trapèzes',color:'#a855f7',exercises:[
     {id:'pompes_ven',name:'Pompes',icon:'bench',cat:'free',isExtra:true,bannerLabel:'AVANT LA SÉANCE',tip:'Pompes au sol - Mains largeur epaules - Corps gaine et aligne - Descends la poitrine vers le sol - Remonte en poussant - Si trop dur pose les genoux au sol'},
@@ -356,32 +357,43 @@ function extraHTML(ex){
     +'</div></div>';
 }
 
+function weightCtrl(key,ec,sideLabel){
+  var w=S.weights[key]||'';
+  var hist=S.hist[key]||[];
+  var last=hist.length>0?hist[hist.length-1]:null;
+  var showSugg=w&&w!=='—'&&last&&last.completedCount>=3&&last.weight===w;
+  var newW=w?(parseFloat(w)+2.5).toFixed(1):'';
+  var opts=['—','2.5','5','7.5','10','12.5','15','17.5','20','22.5','25','27.5','30','32.5','35','40','45','50','55','60','70','80','90','100','120'];
+  var selOpts=opts.map(function(o){return '<option value="'+o+'"'+(o===(w||'—')?' selected':'')+'>'+(o==='—'?'Sélectionner kg':o+' kg')+'</option>';}).join('');
+  return '<div class="wrow">'
+    +(sideLabel?'<span class="wside" style="color:'+ec+'">'+sideLabel+'</span>':'<span style="font-size:11px;color:#555">&#9878;</span>')
+    +'<select class="wsel" data-id="'+key+'" style="color:'+(w&&w!=='—'?ec:'#555')+';border-color:'+(w&&w!=='—'?ec+'60':'#2a2a30')+'">'+selOpts+'</select>'
+    +(w&&w!=='—'?'<span class="wval" style="color:'+ec+';background:'+ec+'18;border-color:'+ec+'40">'+w+' kg</span>':'')
+    +'</div>'
+    +(showSugg?'<div class="sugg">&#128200; '+(sideLabel?sideLabel+' : ':'')+'Tu tiens '+w+'kg depuis 3 fois &mdash; essaie <strong>'+newW+' kg</strong></div>':'');
+}
+
 function exHTML(ex,day){
   var done=!!S.done[ex.id];
   var ec=exCol(ex,day.color);
   var reps=getReps(ex);
-  var w=S.weights[ex.id]||'';
-  var hist=S.hist[ex.id]||[];
-  var last=hist.length>0?hist[hist.length-1]:null;
-  var showSugg=w&&w!=='—'&&!ex.isExtra&&ex.cat!=='cardio'&&last&&last.completedCount>=3&&last.weight===w;
-  var newW=w?(parseFloat(w)+2.5).toFixed(1):'';
   var catB=ex.isExtra?'<span class="bdg bab">Bonus</span>'
     :ex.cat==='assist'?'<span class="bdg ba">🔵 Assistée</span>'
     :ex.cat==='semi'?'<span class="bdg bs">🟡 Semi-guidée</span>'
     :ex.cat==='free'?'<span class="bdg bf">🔴 Libre</span>'
     :ex.cat==='cardio'?'<span class="bdg bc">🏃 Cardio</span>':'';
   var isoB=ex.isIso?'<span class="bdg bi">🎯 Isolation</span>':'';
+  var sideB=ex.side?'<span class="bdg bf">🩹 '+(ex.side==='leg'?'Jambe G/D':'Bras G/D')+'</span>':'';
   var doneB=done?'<span class="bdg bd">✓ Fait</span>':'';
-  var opts=['—','2.5','5','7.5','10','12.5','15','17.5','20','22.5','25','27.5','30','32.5','35','40','45','50','55','60','70','80','90','100','120'];
-  var selOpts=opts.map(function(o){return '<option value="'+o+'"'+(o===(w||'—')?' selected':'')+'>'+(o==='—'?'Sélectionner kg':o+' kg')+'</option>';}).join('');
-  var wRow=ex.cat!=='cardio'
-    ?'<div class="wrow">'
-      +'<span style="font-size:11px;color:#555">&#9878;</span>'
-      +'<select class="wsel" data-id="'+ex.id+'" style="color:'+(w&&w!=='—'?ec:'#555')+';border-color:'+(w&&w!=='—'?ec+'60':'#2a2a30')+'">'+selOpts+'</select>'
-      +(w&&w!=='—'?'<span class="wval" style="color:'+ec+';background:'+ec+'18;border-color:'+ec+'40">'+w+' kg</span>':'')
-      +'</div>'
-      +(showSugg?'<div class="sugg">&#128200; Tu tiens '+w+'kg depuis 3 fois &mdash; essaie <strong>'+newW+' kg</strong></div>':'')
-    :'';
+  var wRow='';
+  if(ex.cat!=='cardio'){
+    if(ex.side){
+      var sl=ex.side==='leg'?['Jambe G','Jambe D']:['Bras G','Bras D'];
+      wRow=weightCtrl(ex.id+'_g',ec,sl[0])+weightCtrl(ex.id+'_d',ec,sl[1]);
+    }else{
+      wRow=weightCtrl(ex.id,ec,'');
+    }
+  }
   return '<div class="exrow">'
     +'<div class="extap" data-id="'+ex.id+'" style="background:'+(done?'rgba(46,204,113,.06)':'transparent')+'">'
     +'<div class="exicon" style="background:'+(done?'rgba(46,204,113,.1)':'#111113')+';border-color:'+(done?'rgba(46,204,113,.3)':'#252528')+'">'+mkIcon(ex.icon,done?'#2ecc71':ec,52)+'</div>'
@@ -389,7 +401,7 @@ function exHTML(ex,day){
     +'<div class="exnm" style="color:'+(done?'#2ecc71':'#efefef')+'">'+ex.name+'</div>'
 
     +'<div class="extip">'+ex.tip+'</div>'
-    +'<div class="exbadges">'+catB+isoB+doneB+'</div>'
+    +'<div class="exbadges">'+catB+isoB+sideB+doneB+'</div>'
     +'</div>'
     +'<div class="exck" style="background:'+(done?'#2ecc71':'transparent')+';border-color:'+(done?'#2ecc71':'#333')+';color:'+(done?'#000':'transparent')+'">✓</div>'
     +'</div>'+wRow+'</div>';
