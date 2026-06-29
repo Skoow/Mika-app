@@ -125,9 +125,9 @@ function mkIcon(n,c,sz){
 var P=[
   {id:'lun',dow:0,label:'LUN',name:'Pecs · Triceps',sub:'3 Pecs · 3 Triceps',color:'#ff4d1c',exercises:[
     {id:'ab_lun',name:'Abdos (Ab Machine)',icon:'abMachine',cat:'assist',isExtra:true,bannerLabel:'AVANT LA SÉANCE',tip:'Gainage abdominal - Contraction en bas - Expiration en haut'},
-    {id:'chestPressLun',name:'Machine Chest Press (Converging)',icon:'bench',cat:'assist',tip:'Assis dos contre le dossier - Pousse les poignees devant toi - Pectoraux - Machine guidee ideale pour debuter - Mouvement principal pecs'},
-    {id:'inclinePressLun',name:'Incline Chest Press Machine',icon:'incline',cat:'assist',tip:'Machine de presse inclinee - Pousse vers le haut - Haut des pectoraux - Machine guidee - Descente controlee'},
-    {id:'pecDeckLun',name:'Pec Deck Fly',icon:'pecFly',cat:'assist',tip:'Coudes sur les pads - Ramener les bras devant la poitrine - Isolation pecs interieur - Contraction maximale au centre - Descente controlee'},
+    {id:'chestPressLun',name:'Machine Chest Press (Converging)',icon:'bench',cat:'assist',side:'arm',tip:'Assis dos contre le dossier - Pousse les poignees devant toi - Pectoraux - Machine guidee ideale pour debuter - Mouvement principal pecs'},
+    {id:'inclinePressLun',name:'Incline Chest Press Machine',icon:'incline',cat:'assist',side:'arm',tip:'Machine de presse inclinee - Pousse vers le haut - Haut des pectoraux - Machine guidee - Descente controlee'},
+    {id:'pecDeckLun',name:'Pec Deck Fly',icon:'pecFly',cat:'assist',side:'arm',tip:'Coudes sur les pads - Ramener les bras devant la poitrine - Isolation pecs interieur - Contraction maximale au centre - Descente controlee'},
     {id:'tricepsPushLun',name:'Cable Triceps Pushdown',icon:'tricepsPush',cat:'assist',pair:'tri',side:'arm',tip:'Corde ou barre - Coudes colles au corps - Pousse vers le bas - Triceps - Mouvement simple a la poulie'},
     {id:'overheadTriLun',name:'Cable Overhead Triceps Extension',icon:'overhead',cat:'assist',pair:'tri',side:'arm',tip:'Corde a la poulie - Bras au dessus de la tete - Descend derriere la nuque - Chef long du triceps - Coudes fixes'},
     {id:'seatedDipLun',name:'Seated Dip Machine',icon:'seatedDip',cat:'assist',isIso:true,side:'arm',tip:'Machine guidee - Pousse vers le bas - Triceps + Pecs bas - ISOLATION FINALE'},
@@ -135,8 +135,8 @@ var P=[
   {id:'mar',dow:1,label:'MAR',name:'Dos · Biceps',sub:'3 Dos · 3 Biceps',color:'#3d8bff',exercises:[
     {id:'pompes_mar',name:'Pompes',icon:'bench',cat:'free',isExtra:true,bannerLabel:'AVANT LA SÉANCE',tip:'Pompes au sol - Mains largeur epaules - Corps gaine et aligne - Descends la poitrine vers le sol - Remonte en poussant - Si trop dur pose les genoux au sol'},
     {id:'pullupMar',name:'Assisted Pull-Up Machine',icon:'pullup',cat:'assist',tip:'Traction assistee - Prise large - Dos large - Tire le corps vers le haut - Grand dorsal - Machine qui aide selon ton niveau'},
-    {id:'chestRowMar',name:'Chest-Supported Row',icon:'seatedRow',cat:'assist',tip:'Poitrine contre le pad incline - Tire les poignees vers le ventre - Rhomboides + Milieu dos - Dos neutre - Pas de compensation car poitrine soutenue'},
-    {id:'straightArmMar',name:'Cable Straight-Arm Pulldown',icon:'latPull',cat:'assist',tip:'Bras tendus - Cable en hauteur - Pousse la barre vers les hanches - Grand dorsal en isolation - Tension constante - Pas de flexion des coudes - Pattern different des tractions'},
+    {id:'chestRowMar',name:'Chest-Supported Row',icon:'seatedRow',cat:'assist',side:'arm',tip:'Poitrine contre le pad incline - Tire les poignees vers le ventre - Rhomboides + Milieu dos - Dos neutre - Pas de compensation car poitrine soutenue'},
+    {id:'straightArmMar',name:'Cable Straight-Arm Pulldown',icon:'latPull',cat:'assist',side:'arm',tip:'Bras tendus - Cable en hauteur - Pousse la barre vers les hanches - Grand dorsal en isolation - Tension constante - Pas de flexion des coudes - Pattern different des tractions'},
     {id:'preacherMar',name:'Machine Preacher Curl',icon:'preacher',cat:'assist',isIso:true,side:'arm',tip:'Bras sur appui incline - Isolation biceps - Contraction maximale en haut - Descente controlee'},
     {id:'dbCurlMar',name:'Dumbbell Curl',icon:'lateralRaise',cat:'free',pair:'bic',side:'arm',tip:'Debout - Coudes colles au corps - Alterne les bras - Biceps chef court - Descente controlee - Haltere facile a gerer'},
     {id:'hammerCurlMar',name:'Hammer Curl',icon:'lateralRaise',cat:'free',pair:'bic',isIso:true,side:'arm',tip:'Prise neutre pouce vers le haut - Biceps chef long + Avant-bras - ISOLATION FINALE'},
@@ -154,12 +154,12 @@ var P=[
   ]},
   {id:'jeu',dow:3,label:'JEU',name:'Épaules · Trapèzes',sub:'4 Épaules · 2 Trapèzes',color:'#a855f7',exercises:[
     {id:'pompes_ven',name:'Pompes',icon:'bench',cat:'free',isExtra:true,bannerLabel:'AVANT LA SÉANCE',tip:'Pompes au sol - Mains largeur epaules - Corps gaine et aligne - Descends la poitrine vers le sol - Remonte en poussant - Si trop dur pose les genoux au sol'},
-    {id:'shoulderPressVen',name:'Machine Shoulder Press',icon:'shoulderPress',cat:'assist',tip:'Assis - Poussee verticale - Deltoide complet - Mouvement principal epaules - Charge moderee - Descente controlee'},
-    {id:'lateralRaiseVen',name:'Dumbbell Lateral Raise',icon:'lateralRaise',cat:'free',tip:'Debout - Bras en croix jusqu a hauteur epaule - Deltoide lateral - Coudes legerement flechis - Haltere leger et mouvement controle'},
-    {id:'rearDeltVen',name:'Machine Rear Delt Fly',icon:'rearDelt',cat:'assist',tip:'Pec Deck en sens inverse - Assis face au dossier - Ecarte les bras vers l arriere - Deltoide posterieur - Contraction maximale en fin de mouvement'},
-    {id:'facePullVen',name:'Cable Face Pull',icon:'facePull',cat:'assist',pair:'cable',tip:'Corde vers le visage - Coudes hauts - Epaules posterieures + Coiffe des rotateurs - Protege les epaules'},
-    {id:'uprightRowVen',name:'Cable Upright Row',icon:'facePull',cat:'assist',pair:'cable',tip:'Cable bas - Tire vers le menton - Coudes hauts - Deltoide lateral + Trapezes'},
-    {id:'shrugVen',name:'Machine Shrug',icon:'shoulderPress',cat:'assist',tip:'Hausse les epaules vers les oreilles - Trapezes - Contraction maximale en haut - Descente lente'},
+    {id:'shoulderPressVen',name:'Machine Shoulder Press',icon:'shoulderPress',cat:'assist',side:'arm',tip:'Assis - Poussee verticale - Deltoide complet - Mouvement principal epaules - Charge moderee - Descente controlee'},
+    {id:'lateralRaiseVen',name:'Dumbbell Lateral Raise',icon:'lateralRaise',cat:'free',side:'arm',tip:'Debout - Bras en croix jusqu a hauteur epaule - Deltoide lateral - Coudes legerement flechis - Haltere leger et mouvement controle'},
+    {id:'rearDeltVen',name:'Machine Rear Delt Fly',icon:'rearDelt',cat:'assist',side:'arm',tip:'Pec Deck en sens inverse - Assis face au dossier - Ecarte les bras vers l arriere - Deltoide posterieur - Contraction maximale en fin de mouvement'},
+    {id:'facePullVen',name:'Cable Face Pull',icon:'facePull',cat:'assist',pair:'cable',side:'arm',tip:'Corde vers le visage - Coudes hauts - Epaules posterieures + Coiffe des rotateurs - Protege les epaules'},
+    {id:'uprightRowVen',name:'Cable Upright Row',icon:'facePull',cat:'assist',pair:'cable',side:'arm',tip:'Cable bas - Tire vers le menton - Coudes hauts - Deltoide lateral + Trapezes'},
+    {id:'shrugVen',name:'Machine Shrug',icon:'shoulderPress',cat:'assist',side:'arm',tip:'Hausse les epaules vers les oreilles - Trapezes - Contraction maximale en haut - Descente lente'},
   ]},
 ];
 
