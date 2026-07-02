@@ -361,9 +361,10 @@ function weightCtrl(key,ec,sideLabel){
   var w=S.weights[key]||'';
   var hist=S.hist[key]||[];
   var last=hist.length>0?hist[hist.length-1]:null;
-  var showSugg=w&&w!=='—'&&last&&last.completedCount>=3&&last.weight===w;
-  var newW=w?(parseFloat(w)+2.5).toFixed(1):'';
-  var opts=['—','2.5','5','7.5','10','12.5','15','17.5','20','22.5','25','27.5','30','32.5','35','40','45','50','55','60','70','80','90','100','120'];
+  var opts=['—','4.5','9','14','18','23','27','32','36','41','45','50','54','59','64','68','73','77','82','86','91'];
+  var idx=opts.indexOf(w);
+  var newW=(idx>0&&idx<opts.length-1)?opts[idx+1]:'';
+  var showSugg=w&&w!=='—'&&newW&&last&&last.completedCount>=3&&last.weight===w;
   var selOpts=opts.map(function(o){return '<option value="'+o+'"'+(o===(w||'—')?' selected':'')+'>'+(o==='—'?'Sélectionner kg':o+' kg')+'</option>';}).join('');
   return '<div class="wrow">'
     +(sideLabel?'<span class="wside" style="color:'+ec+'">'+sideLabel+'</span>':'<span style="font-size:11px;color:#555">&#9878;</span>')
