@@ -357,11 +357,13 @@ function extraHTML(ex){
     +'</div></div>';
 }
 
-function weightCtrl(key,ec,sideLabel){
+function weightCtrl(key,ec,sideLabel,db){
   var w=S.weights[key]||'';
   var hist=S.hist[key]||[];
   var last=hist.length>0?hist[hist.length-1]:null;
-  var opts=['—','4.5','9','14','18','23','27','32','36','41','45','50','54','59','64','68','73','77','82','86','91'];
+  var opts=db
+    ?['—','6','8','10','12','14','16','18','20','22','24','26','28','30','32','34','36','38','40','42','44','46','48','50']
+    :['—','4.5','9','14','18','23','27','32','36','41','45','50','54','59','64','68','73','77','82','86','91'];
   var idx=opts.indexOf(w);
   var newW=(idx>0&&idx<opts.length-1)?opts[idx+1]:'';
   var showSugg=w&&w!=='—'&&newW&&last&&last.completedCount>=3&&last.weight===w;
@@ -388,11 +390,12 @@ function exHTML(ex,day){
   var doneB=done?'<span class="bdg bd">✓ Fait</span>':'';
   var wRow='';
   if(ex.cat!=='cardio'){
+    var db=ex.cat==='free';
     if(ex.side){
       var sl=ex.side==='leg'?['Jambe G','Jambe D']:['Bras G','Bras D'];
-      wRow=weightCtrl(ex.id+'_g',ec,sl[0])+weightCtrl(ex.id+'_d',ec,sl[1]);
+      wRow=weightCtrl(ex.id+'_g',ec,sl[0],db)+weightCtrl(ex.id+'_d',ec,sl[1],db);
     }else{
-      wRow=weightCtrl(ex.id,ec,'');
+      wRow=weightCtrl(ex.id,ec,'',db);
     }
   }
   return '<div class="exrow">'
